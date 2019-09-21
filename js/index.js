@@ -13,7 +13,7 @@ function createGoal() {
 }
 
 window.onload = function() {
-	document.getElementById("new-goal").addEventListener("click", createGoal);
+	document.getElementById("new-goal-section").addEventListener("click", createGoal);
 }
 
 function updateGoals() {

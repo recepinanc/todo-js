@@ -1,5 +1,27 @@
-#new-goal::after {
+html, body {
+	font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#new-goal-section {
+	height: 80px;
+	padding: 24px;
+	position: relative;
+}
+
+#new-goal-title::before {
 	content: url(/Users/recepinanc/work/js/task-management-app/assets/images/plus.png);
+	position: relative;
+	top: calc(50% - 12px);
+	margin-right: 24px;
+}
+
+#new-goal-title {
+	line-height: 1.2;
+	font-size: 36px;
+	height: 48px;
+	color: #4d4d4d90;
+	position: absolute;
+	top: calc(50% - 24px);
 }
 
 .goal {
