@@ -1,0 +1,19 @@
+#new-goal::after {
+	content: url(/Users/recepinanc/work/js/task-management-app/assets/images/plus.png);
+}
+
+.goal {
+	height: 100px;
+	width: 100%;
+}
+
+.goalContainer {
+	padding: 32px;
+}
+
+.goalHeaderContainer span {
+	line-height: 1.2;
+	font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: #4d4d4d;
+}
