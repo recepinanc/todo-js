@@ -6,14 +6,21 @@ function Goal(title, status = 'TODO') {
 var goals = []
 
 function createGoal() {
-	var title = prompt('Whats the title?');
+	var title = document.getElementById("new-goal-title-input").value;
 	var goal = new Goal(title);
 	goals.push(goal);
 	updateGoals();
+	document.getElementById("new-goal-title-input").value = '';
 }
 
 window.onload = function() {
-	document.getElementById("new-goal-section").addEventListener("click", createGoal);
+	document.getElementById("new-goal-title-input").value = '';
+	document.getElementById("new-goal-btn").addEventListener("click", createGoal);
+	document.getElementById("new-goal-title-input").addEventListener("keypress", function(e) {
+		if (e.key === 'Enter') {
+			createGoal();
+		}
+	});
 }
 
 function updateGoals() {

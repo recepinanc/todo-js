@@ -2,6 +2,33 @@ html, body {
 	font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.intro {
+	text-align: center;
+	margin: 100px auto;
+	font-weight: 700;
+	padding: 24px
+}
+
+.intro p {
+	font-weight: 300;
+}
+
+.links {
+	margin-top: 36px;
+}
+
+.intro a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 300;
+	color: #2196f3;
+	margin: 0 24px;
+}
+
+.intro a:visited {
+	color: #2196f3;
+}
+
 #new-goal-section {
 	height: 80px;
 	padding: 24px;
@@ -24,9 +51,40 @@ html, body {
 	top: calc(50% - 24px);
 }
 
+#new-goal-title-input {
+	border: none;
+	line-height: 1.2;
+	font-size: 36px;
+	height: 48px;
+	color: #4d4d4d;
+	position: absolute;
+	font-weight: 300;
+	width: calc(100vw - 136px);
+}
+
+#new-goal-title-input:focus {
+	outline: none;
+}
+
+#new-goal-title-input::placeholder {
+	color: #4d4d4d75;
+}
+
+#new-goal-input-container {
+	padding: 24px;
+}
+
+#new-goal-btn::before {
+	content: url(/Users/recepinanc/work/js/task-management-app/assets/images/plus.png);
+	position: relative;
+	margin-right: 24px;
+	top: calc(50% - 12px);
+}
+
 .goal {
-	height: 100px;
+	height: 36px;
 	width: 100%;
+	padding: 24px;
 }
 
 .goalContainer {
